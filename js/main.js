@@ -1,0 +1,1 @@
+function init(){(new Board).drawBoard()}var canvas=document.getElementById("lienzo"),cx=canvas.getContext("2d"),Board=function(){function t(){}return t.prototype.drawBoard=function(){for(var t=canvas.width/8,n=0;n<8;n++)for(var a=0;a<8;a++)cx.fillStyle=a%2==0?n%2==0?"black":"white":n%2==0?"white":"black",cx.fillRect(a*t,n*t,t,t),cx.fill()},t}();init();
